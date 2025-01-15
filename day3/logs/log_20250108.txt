@@ -1,0 +1,68 @@
+2025-01-08 09:41:08
+DATA : {"ret":"101","msg":"success","data":{"username":"5","password":"5","c_password":"5","name":"5","surname":"5","email":"5","cid":"5","phonenumber":"5","address":"5"}}
+-------------------------
+2025-01-08 09:50:29
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 09:53:03
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 09:53:24
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 09:53:24
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 09:53:24
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 09:53:24
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 09:53:24
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 09:53:25
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 09:53:25
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 09:53:35
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 09:53:48
+DATA : {"ret":"101","msg":"success","data":{"username":"4","password":"4","c_password":"4","name":"4","surname":"4","email":"4","cid":"4","phonenumber":"","address":""}}
+-------------------------
+2025-01-08 09:55:13
+DATA : {"ret":"101","msg":"success","data":{"username":"4","password":"4","c_password":"4","name":"4","surname":"4","email":"4","cid":"4","phonenumber":"","address":""}}
+-------------------------
+2025-01-08 09:55:57
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 09:55:57
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 09:57:18
+DATA : {"ret_code":"202","msg":"Invalid data username","data":""}
+-------------------------
+2025-01-08 10:02:58
+IP :::1
+2025-01-08 10:02:59
+IP :::1
+2025-01-08 10:06:15
+IP :58.8.155.57
+2025-01-08 10:06:16
+IP :58.8.155.57
+2025-01-08 10:06:17
+IP :58.8.155.57
+2025-01-08 10:06:18
+IP :58.8.155.57
+2025-01-08 11:00:27
+IP :180.183.250.244
+2025-01-08 11:21:13
+IP :180.183.250.244
+2025-01-08 11:23:03
+IP :58.8.155.57
+2025-01-08 11:27:52
+IP :58.8.155.57

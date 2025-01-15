@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST CAL</title>
+    <style>
+        #wrapper{
+            width: 80%;
+            border: 1px solid red;
+            margin: 0 auto;
+            min-height: 500px;
+        }
+        #result{
+            width: 120px;
+            margin: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        input number : <input type="text" id="numb" name="numb" />
+        <button type="button" onclick="cal()"> cal </button>
+        <div id="result">
+            X
+        </div>
+        <script>
+            function cal(){
+               var numb = document.getElementById('numb').value;
+                var result= "F";
+                if(!numb){
+                alert('No input')
+                document.getElementById('numb').focus()
+                
+                return false;
+                }
+               if(numb >=80){
+                result = "A";
+               }else if(numb >=70){
+                result = "B";
+               }else if(numb >=60){
+                result = "C";
+               }else if(numb >=50){
+                result = "D";
+               }
+               document.getElementById('result').innerHTML = result
+               console.log(typeof(numb));
+               
+            }
+        </script>
+    </div>
+</body>
+</html>

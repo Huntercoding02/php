@@ -1,0 +1,46 @@
+#div_1{
+    border:1px solid red; 
+    width: 100px; 
+    text-align: center; 
+    /* color: aqua;  */
+    border-radius: 5px ; 
+    padding:10px; 
+    margin: 10px; 
+    float: left;
+}
+#div_2{
+    border:1px solid red; 
+    width: 100px; 
+    text-align: center; 
+    color: aqua; 
+    border-radius: 5px ; 
+    padding:10px; 
+    margin: 10px; 
+    float: left;
+}
+.txt_color{
+    color: blue;
+}
+#div_3{
+    border:1px solid rgb(22, 26, 250) ;
+     width: 100px; 
+     text-align: center; 
+    color: #d45308;
+     float: left;
+     padding: 10px;
+}
+#div_4{
+    border:1px solid rgb(22, 26, 250) ; 
+    width: 100px; 
+    text-align: center; 
+    color: #d45308; 
+    float: left;
+    padding: 10px;
+}
+.css_border:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.css_back{
+    background-color: antiquewhite;
+}
