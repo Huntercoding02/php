@@ -117,7 +117,7 @@ if(!$name){
 
 $pattern_name = "/^[\p{L}\p{M}]+$/u";
     if (preg_match($pattern_name , $name)==FALSE) {
-        $response = array('ret_code'=>'301','msg'=>"Pattern name is wrong!");
+        $response = array('ret_code'=>'302','msg'=>"Pattern name is wrong!");
         echo json_encode($response);
         write_log(json_encode($response));
         exit;
@@ -136,7 +136,7 @@ if(!$surname){
 
 $pattern_surname = "/^[\p{L}\p{M}]+$/u";
     if (preg_match($pattern_surname , $surname)==FALSE) {
-        $response = array('ret'=>'301','msg'=>'"Pattern surname is wrong!"');
+        $response = array('ret'=>'303','msg'=>'"Pattern surname is wrong!"');
         echo json_encode($response);
         write_log(json_encode($response));
         exit;
@@ -155,7 +155,7 @@ if(!$email){
 
 $pattern_email = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/";
     if (preg_match($pattern_email , $email)==FALSE) {
-        $response = array('ret'=>'301','msg'=>"Pattern email is wrong!");
+        $response = array('ret'=>'304','msg'=>"Pattern email is wrong!");
         echo json_encode($response);
         write_log(json_encode($response));
         exit;
@@ -175,7 +175,7 @@ if(!$cid || !preg_match('/^\d{13}$/', $cid)){
 
 
 if(isset($_POST['phonenumber']) && $_POST['phonenumber']!=''){
-    $phonenumber = $_POST['phonenumber'];
+    $phonenumber = $web->escape_string($_POST['phonenumber']); 
     
 }
 // if(!$phonenumber){
@@ -184,7 +184,8 @@ if(isset($_POST['phonenumber']) && $_POST['phonenumber']!=''){
 //     exit;
 // }
 if(isset($_POST['address']) && $_POST['address']!=''){
-    $address = $_POST['address'];
+    $address = $web->escape_string($_POST['address']); 
+    // $_POST['address'];
     
 }
 $password =md5($password);
@@ -213,6 +214,14 @@ VALUES ('".$username."', '".$password."', '".$cid."', '".$email."', '".$name."',
 // $result_insert = mysqli_query($conn,$sql);
 $result_insert = $web->execute($sql);
 
+// $sql_citizin =  "SELECT username FROM user_info WHERE citizin ='{$cid}' LIMIT 1"; //sql check for 
+    // $result = $web->select($sone)
+    // if (count(sql_citizin) >0){
+    //     $response =array('ret'=>'101','msg'=>"success","data"=>$_POST);
+    //     write_log(json_encode($response));
+    //     echo json_encode($response);
+    //     exit;
+    // }
 
 $sql_check = "SELECT FROM user_info WHERE username = '$username' = ";
 // $array_result = array();
@@ -222,10 +231,15 @@ if($result_insert){
     echo json_encode($response);
     exit;
 }else{
-    $response = array('ret'=>'301','msg'=>"Unsuccess","sql"=>$sql);
-    //$sql_citizin =  SELECT username FROM user_info WHERE citizin ='{$username}' LIMIT 1; sql check for 
-    //$result = $web->select($sone)
-    //if count >0
+    $response = array('ret'=>'301','msg'=>"Unsuccess  dupli","sql"=>$sql);
+    // $sql_citizin =  "SELECT username FROM user_info WHERE citizin ='{$cid}' LIMIT 1"; //sql check for 
+    // $result = $web->select($sone)
+    // if (count(sql_citizin) >0){
+    //     $response =array('ret'=>'101','msg'=>"success","data"=>$_POST);
+    //     write_log(json_encode($response));
+    //     echo json_encode($response);
+    //     exit;
+    // }
     //response json
     //exit
     //$sql_password =  SELECT username FROM user_info WHERE username ='{$username}' LIMIT 1; sql check for 

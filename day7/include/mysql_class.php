@@ -51,5 +51,9 @@ class mysql_class {
             return false;
         }
     }
+    function escape_string($str){
+        return mysqli_real_escape_string($this->connect,$str);
+    }
+    
 }
 ?>
