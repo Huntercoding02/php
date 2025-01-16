@@ -40,10 +40,9 @@
 $servername = "127.0.0.1";
 $username = "hunter";
 $password = "123456";
-$dbname = "full_ss5";
-
 $password_user =md5($password);
 $username_user = $_POST['username_user'];
+$dbname = "full_ss5";
 $cid = $_POST['cid'];
 $email =$_POST['email'];
 $name =$_POST['name'];
