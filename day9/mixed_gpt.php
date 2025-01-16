@@ -17,7 +17,7 @@
 	// print_r($deCode);
 
     $arrayHeader_gpt = array();
-$GPT_API_KEY ="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" ;
+$GPT_API_KEY ="" ;
 $arrayHeader_gpt[] = "Content-Type: application/json";
 $arrayHeader_gpt[] = "Authorization: Bearer ".$GPT_API_KEY ;
 $message = $text;
