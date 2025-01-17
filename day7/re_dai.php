@@ -120,6 +120,7 @@
         <input type="radio" id="ford" name="sql" value="0">
         <label for="ford">Ford</label><br>
     </div>
+    
     <script>
       $( document ).ready(function() {
     console.log( "ready!" );
@@ -145,9 +146,9 @@
         var cid = $("#cid").val();
         var phone = $("#phone").val();
         var address = $("#address").val();
-        
+    
         var selected = $("input[name='sql']:checked").val();
-        // console.log(selected);
+
 
         // alert(numb_1);
         if(username==""){
@@ -305,8 +306,9 @@
         '&cid='+cid+
         '&phone='+phone+
         '&address='+address+
-        '&selected='+ selected; //ค่าที่จะส่งไปพร้อมตัวแปร
-        // console.log(dataString);
+        '&selected='+ selected;
+//ค่าที่จะส่งไปพร้อมตัวแปร
+        console.log(dataString,'hoi0');
         
         $.ajax ({
                     type: "POST", //METHOD "GET","POST"
@@ -314,14 +316,16 @@
                     data: dataString,
                     //cache: false,
                     success: function(data) {
-                        console.log(data);
+                        console.log(data,'hoi1');
                         
                     var data_red = JSON.parse(data)
                     // //alert(data);
                     // console.log(data_red.ret_code);
-                    console.log(data_red);
+                    console.log(data_red,'hoi2');
                     
                     if(data_red.ret == 101){
+                        console.log(data_red,'hoi3');
+                        
                        window.location.href=data_red.location
                         // $("#c_password").focus();
                     }else{
@@ -351,3 +355,4 @@
 </body>
 
 </html>
+

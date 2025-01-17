@@ -1,4 +1,7 @@
 <?php
+
+//หน้า form ของเราที่ต้องรับค่า
+
 include_once('../day7/include/WebConfig.php');
 $web = new mysql_class();
 $web->Connect2Web();
@@ -17,6 +20,45 @@ $email ="";
 $cid ="";
 $phonenumber ="";
 $address ="";
+$my_token = "hunhunhun";
+    write_log(json_encode($_POST));
+    $token_cur = isset($_POST['date'])?($_POST['date']):"";
+    $token_user = isset($_POST['user'])?($_POST['user']):"";
+    $token_username = isset($_POST['username'])?($_POST['username']):"";
+    $token_password = isset($_POST['password'])?($_POST['password']):"";
+    $token_con_password = isset($_POST['c_password'])?($_POST['c_password']):"";
+    $token_name = isset($_POST['name'])?($_POST['name']):"";
+    $token_surname = isset($_POST['surname'])?($_POST['surname']):"";
+    $token_email = isset($_POST['email'])?($_POST['email']):"";
+    $token_cid = isset($_POST['cid'])?($_POST['cid']):"";
+    $token_phonenumber = isset($_POST['phonenumber'])?($_POST['phonenumber']):"";
+    $token_address = isset($_POST['address'])?($_POST['address']):"";
+   
+
+    $token = md5($token_username . $token_password . $token_con_password . $token_email . $token_name . $token_surname . $token_cid . $token_phonenumber . $token_address . $token_cur . $my_token);
+
+
+// $p_tokenex = md5($_POST['username'] . $_POST['password'] . $_POST['con_password'] . $_POST['email'] . $_POST['fname'] . $_POST['lname'] . $_POST['c_id'] . $_POST['phone'] . $_POST['address'] . $_POST['date'] . $my_token);
+
+
+if($token_user != $token){
+    $response = array('ret_code'=>'002','msg'=>"Wrong User");
+    echo json_encode($response);
+    write_log(json_encode($response));
+    exit;
+}
+
+$data_diff = strtotime(date("Y-m-d H:i:s")) - $token_cur;
+write_log($data_diff);
+write_log($token_cur);
+write_log(strtotime(date("Y-m-d H:i:s")));
+if($data_diff>=300 || $data_diff<(-300)){
+    
+    $response = array('ret_code'=>'003','msg'=>"User expired");
+    echo json_encode($response);
+    write_log(json_encode($response));
+    exit;
+}
 
 
 // $servername = "127.0.0.1";
@@ -197,7 +239,7 @@ $password =md5($password);
 // Create connection
 // $conn = mysqli_connect( $servername, $username_user , $password_user  );
 // mysqli_select_db($conn,$dbname);
-// print_r($conn->errno);
+// ($conn->errno);
 // Check connection
 // if ($conn->errno) {
 //     die("Connection failed: " . $conn->connect_error);
@@ -223,13 +265,42 @@ $result_insert = $web->execute($sql);
     //     exit;
     // }
 
-$sql_check = "SELECT FROM user_info WHERE username = '$username' = ";
+$sql_check = "SELECT FROM user_info FROM user_info WHERE username = '$username' LIMIT 1 ";
 // $array_result = array();
+
+// $sql_citizin =  "SELECT citizen_id FROM user_info WHERE citizin ='{$cid}' LIMIT 1"; //sql check for 
+//     $result = $web->select($sql_citizin);
+//     if(count($sql_citizin>0)){
+//         $response =array('ret'=>'101','msg'=>"success","data"=>$_POST);
+//         write_log(json_encode($response));
+//         echo json_encode($response);
+//         exit;
+//     }
+
+//     $sql_username =  "SELECT citizen_id FROM user_info WHERE username ='{$username}' LIMIT 1"; //sql check for 
+//     $result = $web->select($sql_username);
+//     if(count($sql_username>0)){
+//         $response =array('ret'=>'101','msg'=>"success","data"=>$_POST);
+//         write_log(json_encode($response));
+//         echo json_encode($response);
+//         exit;
+//     }
+
+//     $sql_email =  "SELECT email FROM user_info WHERE email ='{$email}' LIMIT 1"; //sql check for 
+//     $result = $web->select($sql_email);
+//     if(count($sql_email>0)){
+//         $response =array('ret'=>'101','msg'=>"success","data"=>$_POST);
+//         write_log(json_encode($response));
+//         echo json_encode($response);
+//         exit;
+//     }
+
 if($result_insert){
-    $response =array('ret'=>'101','msg'=>"success","data"=>$_POST);
+    $response =array('ret'=>'101','msg'=>"success","data"=>$_POST,'location'=> "https://together-gladly-airedale.ngrok-free.app/ss5/day5/table_show.php");
     write_log(json_encode($response));
     echo json_encode($response);
     exit;
+
 }else{
     $response = array('ret'=>'301','msg'=>"Unsuccess  dupli","sql"=>$sql);
     // $sql_citizin =  "SELECT username FROM user_info WHERE citizin ='{$cid}' LIMIT 1"; //sql check for 
@@ -274,10 +345,10 @@ $web->closedb();
 function write_log($log){
     //Something to write to txt log
     $date_log = date("Y-m-d H:i:s").PHP_EOL.
-    "IP :".get_client_ip().PHP_EOL;
+    "IP :".get_client_ip().PHP_EOL.
     "DATA : ".$log.PHP_EOL."-------------------------".PHP_EOL;
     //Save string to log, use FILE_APPEND to append.
-    file_put_contents('logs/log_'.date("Ymd").'.txt', $date_log, FILE_APPEND);
+    file_put_contents('logs/log_x'.date("Ymd").'.txt', $date_log, FILE_APPEND);
 }
 
 function get_client_ip() {
@@ -300,3 +371,4 @@ function get_client_ip() {
 }
 
 ?>
+

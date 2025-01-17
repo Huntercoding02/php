@@ -1,4 +1,6 @@
 <?PHP
+
+//// หน้า PROCESS + ยิง api ของแต่ละคน
 $username ="";
 $password ="";
 $c_password ="";
@@ -10,13 +12,34 @@ $phonenumber ="";
 $address ="";
 $selected ="";
 
+// if (isset($_POST['check']) && $_POST['check'] != '') {
+//     $check = $_POST['check'];
+// }
+
+
+// $token_cur = $_POST['$input_current'];
+// $token_cur = $_POST['$input_username'];
+// $token = md5($input_current."hunhunhun");
+// if($token_cur != $token){
+//     echo "Wrong User";
+//     exit;
+// }
+// $data_diff = strtotime(date("Y-m-d H:i:s")) - $input_current;
+// if($data_diff>=300 || $data_diff<0){
+//     echo "expired";
+//     exit;
+// }
+
+
 
 if (isset($_POST['selected']) && $_POST['selected'] != '') {
     $selected = $_POST['selected'];
 }
+
 if (isset($_POST['username']) && $_POST['username'] != '') {
     $username = $_POST['username'];
 }
+
 if (!$username) {
     $response = array('ret_code' => '202', 'msg' => "Invalid data username", "data" => "");
     echo json_encode($response);
@@ -163,14 +186,17 @@ if (isset($_POST['address']) && $_POST['address'] != '') {
 
 }
 
-
+$token_each = "hunhunhun";
 $switch_1 = $selected;
+$input_current = strtotime(date("Y-m-d H:i:s")) ;
 
 
 if ($switch_1 == '1') {
-    // echo 'huntedr';
+    // echo 'dai';
     // exit;
 //1 dai
+$input_current = date("Y-m-d H:i:s");
+    $token_dai ="PHEDsudlor";
     $params_array_dai = array(
         'username' => $username,
         'password' =>  $password,
@@ -180,12 +206,18 @@ if ($switch_1 == '1') {
         'email' => $email,
         'cid' => $cid,
         'phonenumber' => $phonenumber,
-        'address' => $address
+        'address' => $address,
+        'userdate' => $input_current,
+        'input_token' => md5($username.$input_current.$token_dai )
+        // '' => $token_each,
+        // 'token' => md5($username . $password . $c_password . $email . $name . $surname . $cid . $phonenumber . $address . $input_current . $ford_token)
     );
 
-    $url_dai = "https://hawk-strong-abnormally.ngrok-free.app/ss5/day3/tableprocess.php";
+    $url_dai = "https://hawk-strong-abnormally.ngrok-free.app/ss5/day3/token/regisprocesstoken.php";
 
-
+    
+    
+    
     $result = cuel($url_dai, $params_array_dai);
     // $redirect_dai = "https://hawk-strong-abnormally.ngrok-free.app/ss5/day3/tableshow.php";
 
@@ -209,9 +241,12 @@ if ($switch_1 == '1') {
 
     }
 }else if($switch_1 == '0') { 
-    // echo 'huntefr';
+    // echo 'ford';
     // exit;
 //2 ford
+// $input_username = md5($_POST['username'] . $_POST['password'] . $_POST['con_password'] . $_POST['email'] . $_POST['fname'] . $_POST['lname'] . $_POST['c_id'] . $_POST['phone'] . $_POST['address'] . $_POST['date'] . $token_each );
+$input_current = date("Y-m-d H:i:s");
+    $ford_token = "ba59abbe56e057";
     $params_array_ford = array(
     'username' => $username,
     'password' =>  $password,
@@ -221,7 +256,9 @@ if ($switch_1 == '1') {
     'email' => $email,
     'c_id' => $cid,
     'phone' => $phonenumber,
-    'address' => $address
+    'address' => $address,
+    'date' => $input_current,
+    'token' => md5($username . $password . $c_password . $email . $name . $surname . $cid . $phonenumber . $address . $input_current . $ford_token)
 );
 
 
@@ -257,6 +294,7 @@ if(isset($data_res->status) && $data_res->status == '101') {
     // echo 'hunter';
     // exit;
     //3 hunter
+    $my_token ="hunhunhun";
     $params_array_hunter = array(
         'username' => $username,
         'password' =>  $password,
@@ -266,7 +304,10 @@ if(isset($data_res->status) && $data_res->status == '101') {
         'email' => $email,
         'cid' => $cid,
         'phonenumber' => $phonenumber,
-        'address' => $address
+        'address' => $address,
+        'date' => $input_current,
+        'user' => md5($username . $password . $c_password . $email . $name . $surname . $cid . $phonenumber . $address . $input_current . $my_token)
+
     );
     
     
@@ -274,7 +315,9 @@ if(isset($data_res->status) && $data_res->status == '101') {
     
     $result = cuel($url_hunter, $params_array_hunter);
     
-        
+    
+    echo($result);
+    exit;
     $data_res = json_decode($result);
     
        
@@ -290,6 +333,7 @@ if(isset($data_res->status) && $data_res->status == '101') {
         if (isset($data_res->msg)) {
             $msg = $data_res->msg;
         }
+        
         $response = array('ret' => '901', 'msg' => $msg);
         echo json_encode($response);
         
@@ -357,3 +401,5 @@ function get_client_ip() {
         $ipaddress = 'UNKNOWN';
     return $ipaddress;
 }
+
+///ยิงหน้านี้ไปสู่หน้าfile_process

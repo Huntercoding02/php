@@ -1,0 +1,240 @@
+2025-01-17 14:19:14
+IP :180.183.250.244
+2025-01-17 14:19:14
+IP :180.183.250.244
+2025-01-17 14:20:05
+IP :180.183.250.244
+DATA : Array
+-------------------------
+2025-01-17 14:20:05
+IP :180.183.250.244
+DATA : {"ret_code":"003","msg":"User expired"}
+-------------------------
+2025-01-17 14:20:50
+IP :180.183.250.244
+DATA : {"username":"ford122322","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv232@fordford.com","cid":"5454525232851","phonenumber":"1234567890","address":"uiop7845","date":"1737098452","user":"0609770b867f7ced80c6e42863937acb"}
+-------------------------
+2025-01-17 14:20:50
+IP :180.183.250.244
+DATA : {"ret_code":"003","msg":"User expired"}
+-------------------------
+2025-01-17 14:21:40
+IP :180.183.250.244
+DATA : {"username":"ford1223221","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv2312@fordford.com","cid":"5451525232851","phonenumber":"1234567890","address":"uiop7845","date":"1737098481","user":"d5019aa75c74459ac42533498201d1f8"}
+-------------------------
+2025-01-17 14:21:40
+IP :180.183.250.244
+DATA : {"ret":"101","msg":"success","data":{"username":"ford1223221","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv2312@fordford.com","cid":"5451525232851","phonenumber":"1234567890","address":"uiop7845","date":"1737098481","user":"d5019aa75c74459ac42533498201d1f8"},"location":"https:\/\/together-gladly-airedale.ngrok-free.app\/ss5\/day5\/table_show.php"}
+-------------------------
+2025-01-17 14:23:25
+IP :180.183.250.244
+DATA : {"username":"ford1223221","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv2312@fordford.com","cid":"5451525232851","phonenumber":"1234567890","address":"uiop7845","date":"1737098606","user":"b73e945eee87f2e89b822b91a77c010f"}
+-------------------------
+2025-01-17 14:23:25
+IP :180.183.250.244
+DATA : -1
+-------------------------
+2025-01-17 14:23:25
+IP :180.183.250.244
+DATA : {"ret_code":"003","msg":"User expired"}
+-------------------------
+2025-01-17 14:23:40
+IP :180.183.250.244
+DATA : {"username":"ford1123221","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv23112@fordford.com","cid":"5451521232851","phonenumber":"1234567890","address":"uiop7845","date":"1737098621","user":"bf91daca1d42bb963f95335cc139775f"}
+-------------------------
+2025-01-17 14:23:40
+IP :180.183.250.244
+DATA : -1
+-------------------------
+2025-01-17 14:23:40
+IP :180.183.250.244
+DATA : {"ret_code":"003","msg":"User expired"}
+-------------------------
+2025-01-17 14:23:54
+IP :180.183.250.244
+DATA : {"username":"ford112321","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv231912@fordford.com","cid":"9451521232851","phonenumber":"1234567890","address":"uiop7845","date":"1737098636","user":"1f8e32d31054bbe3c0b85098efa3e942"}
+-------------------------
+2025-01-17 14:23:54
+IP :180.183.250.244
+DATA : -2
+-------------------------
+2025-01-17 14:23:54
+IP :180.183.250.244
+DATA : {"ret_code":"003","msg":"User expired"}
+-------------------------
+2025-01-17 14:24:34
+IP :180.183.250.244
+DATA : {"username":"ford112321","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv231912@fordford.com","cid":"9451521232851","phonenumber":"1234567890","address":"uiop7845","date":"1737098646","user":"a070558effcb522487a2dfaff639cc4c"}
+-------------------------
+2025-01-17 14:24:34
+IP :180.183.250.244
+DATA : 28
+-------------------------
+2025-01-17 14:24:34
+IP :180.183.250.244
+DATA : 1737098646
+-------------------------
+2025-01-17 14:24:34
+IP :180.183.250.244
+DATA : 1737098674
+-------------------------
+2025-01-17 14:24:34
+IP :180.183.250.244
+DATA : {"ret":"101","msg":"success","data":{"username":"ford112321","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv231912@fordford.com","cid":"9451521232851","phonenumber":"1234567890","address":"uiop7845","date":"1737098646","user":"a070558effcb522487a2dfaff639cc4c"},"location":"https:\/\/together-gladly-airedale.ngrok-free.app\/ss5\/day5\/table_show.php"}
+-------------------------
+2025-01-17 14:24:42
+IP :180.183.250.244
+DATA : {"username":"ford112321","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv231912@fordford.com","cid":"9451521232851","phonenumber":"1234567890","address":"uiop7845","date":"1737098683","user":"be872aeb096e1ff79be063e13b6232eb"}
+-------------------------
+2025-01-17 14:24:42
+IP :180.183.250.244
+DATA : -1
+-------------------------
+2025-01-17 14:24:42
+IP :180.183.250.244
+DATA : 1737098683
+-------------------------
+2025-01-17 14:24:42
+IP :180.183.250.244
+DATA : 1737098682
+-------------------------
+2025-01-17 14:24:42
+IP :180.183.250.244
+DATA : {"ret_code":"003","msg":"User expired"}
+-------------------------
+2025-01-17 14:25:24
+IP :180.183.250.244
+DATA : {"username":"ford112121","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv231911@fordford.com","cid":"9421521232851","phonenumber":"1234567890","address":"uiop7845","date":"1737098705","user":"ac4276688797cad06c08dd35ed5405e5"}
+-------------------------
+2025-01-17 14:25:24
+IP :180.183.250.244
+DATA : 19
+-------------------------
+2025-01-17 14:25:24
+IP :180.183.250.244
+DATA : 1737098705
+-------------------------
+2025-01-17 14:25:24
+IP :180.183.250.244
+DATA : 1737098724
+-------------------------
+2025-01-17 14:25:24
+IP :180.183.250.244
+DATA : {"ret":"101","msg":"success","data":{"username":"ford112121","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv231911@fordford.com","cid":"9421521232851","phonenumber":"1234567890","address":"uiop7845","date":"1737098705","user":"ac4276688797cad06c08dd35ed5405e5"},"location":"https:\/\/together-gladly-airedale.ngrok-free.app\/ss5\/day5\/table_show.php"}
+-------------------------
+2025-01-17 14:25:50
+IP :180.183.250.244
+DATA : {"username":"ford112161","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv236911@fordford.com","cid":"9421521632851","phonenumber":"1234567890","address":"uiop7845","date":"1737098751","user":"c03879b86ec198f496e08ecf8985851a"}
+-------------------------
+2025-01-17 14:25:50
+IP :180.183.250.244
+DATA : -1
+-------------------------
+2025-01-17 14:25:50
+IP :180.183.250.244
+DATA : 1737098751
+-------------------------
+2025-01-17 14:25:50
+IP :180.183.250.244
+DATA : 1737098750
+-------------------------
+2025-01-17 14:25:50
+IP :180.183.250.244
+DATA : {"ret_code":"003","msg":"User expired"}
+-------------------------
+2025-01-17 14:28:20
+IP :180.183.250.244
+DATA : {"username":"ford152161","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv2369151@fordford.com","cid":"9421525532851","phonenumber":"1234567890","address":"uiop7845","date":"1737098901","user":"a0869daa362e5a6a3bdfc5870a2a950d"}
+-------------------------
+2025-01-17 14:28:20
+IP :180.183.250.244
+DATA : -1
+-------------------------
+2025-01-17 14:28:20
+IP :180.183.250.244
+DATA : 1737098901
+-------------------------
+2025-01-17 14:28:20
+IP :180.183.250.244
+DATA : 1737098900
+-------------------------
+2025-01-17 14:28:20
+IP :180.183.250.244
+DATA : {"ret":"101","msg":"success","data":{"username":"ford152161","password":"123789456@Rr","c_password":"123789456@Rr","name":"uiopuiopuiopuiop","surname":"forsdfoasdard","email":"vxcvxcv2369151@fordford.com","cid":"9421525532851","phonenumber":"1234567890","address":"uiop7845","date":"1737098901","user":"a0869daa362e5a6a3bdfc5870a2a950d"},"location":"https:\/\/together-gladly-airedale.ngrok-free.app\/ss5\/day5\/table_show.php"}
+-------------------------
+2025-01-17 14:40:07
+IP :180.183.250.244
+DATA : {"username":"username02345","password":"Password01!","c_password":"Password01!","name":"hg","surname":"gh","email":"12fff@2fdli.mob","cid":"8799799968899","phonenumber":"","address":"","date":"1737099607","user":"a680e863cf5b1b273f28bb42aa75d50d"}
+-------------------------
+2025-01-17 14:40:07
+IP :180.183.250.244
+DATA : 0
+-------------------------
+2025-01-17 14:40:07
+IP :180.183.250.244
+DATA : 1737099607
+-------------------------
+2025-01-17 14:40:07
+IP :180.183.250.244
+DATA : 1737099607
+-------------------------
+2025-01-17 14:40:07
+IP :180.183.250.244
+DATA : {"ret":"301","msg":"Unsuccess  dupli","sql":"INSERT INTO user_info\r\n(`username`, `password`, `citizin_id`, `email`, `name`, `surname`, `address`, `phone_number`) \r\nVALUES ('username02345', 'a332233d395c415a99c6b16a2348c129', '8799799968899', '12fff@2fdli.mob', 'hg', 'gh',' ', '');\r\n"}
+-------------------------
+2025-01-17 14:51:07
+IP :180.183.250.244
+DATA : {"username":"SUdmmanaaaaa","password":"Suminan02@","c_password":"Suminan02@","email":"ghsaad@gg.co","name":"asdg","surname":"jutf","cid":"1114445551111","phonenumber":"sdfh","address":"sfdfdf","user":"2025-01-17 14:51:07"}
+-------------------------
+2025-01-17 14:51:07
+IP :180.183.250.244
+DATA : {"ret_code":"002","msg":"Wrong User"}
+-------------------------
+2025-01-17 14:51:22
+IP :180.183.250.244
+DATA : {"username":"SUdmmanaaaaa","password":"Suminan02@","c_password":"Suminan02@","email":"ghsaad@gg.co","name":"asdg","surname":"jutf","cid":"1114445551111","phonenumber":"sdfh","address":"sfdfdf","user":"2025-01-17 14:51:22"}
+-------------------------
+2025-01-17 14:51:22
+IP :180.183.250.244
+DATA : {"ret_code":"002","msg":"Wrong User"}
+-------------------------
+2025-01-17 14:54:09
+IP :180.183.250.244
+DATA : {"username":"SUdmmanaaaaa","password":"Suminan02@","c_password":"Suminan02@","email":"ghsaad@gg.co","name":"asdg","surname":"jutf","cid":"1114445551111","phonenumber":"sdfh","address":"sfdfdf","date":"2025-01-17 14:54:09","user":"cb13556021ce42a29b502496c3e93cba"}
+-------------------------
+2025-01-17 14:54:09
+IP :180.183.250.244
+DATA : 1737098424
+-------------------------
+2025-01-17 14:54:09
+IP :180.183.250.244
+DATA : 2025-01-17 14:54:09
+-------------------------
+2025-01-17 14:54:09
+IP :180.183.250.244
+DATA : 1737100449
+-------------------------
+2025-01-17 14:54:09
+IP :180.183.250.244
+DATA : {"ret_code":"003","msg":"User expired"}
+-------------------------
+2025-01-17 14:58:48
+IP :180.183.250.244
+DATA : {"username":"SUdmmanaaaaa","password":"Suminan02@","c_password":"Suminan02@","email":"ghsaad@gg.co","name":"asdg","surname":"jutf","cid":"1114445551111","phonenumber":"sdfh","address":"sfdfdf","date":"1737100728","user":"cb0771b4c9496ba6ed443b24e691d642"}
+-------------------------
+2025-01-17 14:58:48
+IP :180.183.250.244
+DATA : 0
+-------------------------
+2025-01-17 14:58:48
+IP :180.183.250.244
+DATA : 1737100728
+-------------------------
+2025-01-17 14:58:48
+IP :180.183.250.244
+DATA : 1737100728
+-------------------------
+2025-01-17 14:58:48
+IP :180.183.250.244
+DATA : {"ret":"101","msg":"success","data":{"username":"SUdmmanaaaaa","password":"Suminan02@","c_password":"Suminan02@","email":"ghsaad@gg.co","name":"asdg","surname":"jutf","cid":"1114445551111","phonenumber":"sdfh","address":"sfdfdf","date":"1737100728","user":"cb0771b4c9496ba6ed443b24e691d642"},"location":"https:\/\/together-gladly-airedale.ngrok-free.app\/ss5\/day5\/table_show.php"}
+-------------------------

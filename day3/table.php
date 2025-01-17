@@ -274,7 +274,16 @@
         $("#wroning").fadeOut(500);
         
         var data_1 = 1;
-        var dataString = 'username='+ username + '&password=' + password + '&c_password='+c_password+'&name='+name+'&surname='+surname+'&email='+email+'&cid='+cid +'&phonenumber='+phonenumber+'&address='+address; //ค่าที่จะส่งไปพร้อมตัวแปร
+        var dataString = 
+        'username='+ username + 
+        '&password=' + password + 
+        '&c_password='+c_password+
+        '&name='+name+
+        '&surname='+surname+
+        '&email='+email+
+        '&cid='+cid +
+        '&phonenumber='+phonenumber+
+        '&address='+address; //ค่าที่จะส่งไปพร้อมตัวแปร
         console.log(dataString);
         
         $.ajax ({
@@ -317,3 +326,7 @@
 </body>
 
 </html>
+<?php
+// $input_current = date("Y-m-d H:i:s") ;
+// $input_username = md5($input_current."hunhunhun");
+?>
