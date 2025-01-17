@@ -4,7 +4,7 @@
 $url="https://api.openai.com/v1/chat/completions";
 
 $arrayHeader_gpt = array();
-$GPT_API_KEY ="" ;
+// $GPT_API_KEY ="" ;
 $arrayHeader_gpt[] = "Content-Type: application/json";
 $arrayHeader_gpt[] = "Authorization: Bearer ".$GPT_API_KEY ;
 $message = "ประเทศไทยมีกี่จังหวัด";
