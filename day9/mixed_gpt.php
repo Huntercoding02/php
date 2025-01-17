@@ -17,7 +17,7 @@
 	// print_r($deCode);
 
     $arrayHeader_gpt = array();
-$GPT_API_KEY ="" ;
+
 $arrayHeader_gpt[] = "Content-Type: application/json";
 $arrayHeader_gpt[] = "Authorization: Bearer ".$GPT_API_KEY ;
 $message = $text;
