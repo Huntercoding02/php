@@ -96,7 +96,8 @@ $sql = "SELECT * FROM user_info WHERE status in('0','1') ORDER BY createtime DES
 // $result = mysqli_query($conn, $sql);
 $array_result = $web->select($sql);
 
-
+var_dump($array_result);
+exit;
 
 // $array_result = array();
 // if($result_insert){

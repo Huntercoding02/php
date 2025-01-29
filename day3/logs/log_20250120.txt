@@ -1,0 +1,156 @@
+2025-01-20 10:33:53
+IP :180.183.250.244
+DATA : []
+-------------------------
+2025-01-20 10:33:53
+IP :180.183.250.244
+DATA : {"ret_code":"002","msg":"Wrong User"}
+-------------------------
+2025-01-20 16:54:16
+IP :180.183.250.244
+DATA : []
+-------------------------
+2025-01-20 16:54:16
+IP :180.183.250.244
+DATA : {"ret_code":"002","msg":"Wrong User"}
+-------------------------
+2025-01-20 16:54:41
+IP :180.183.250.244
+DATA : {"username":"TestPeePhet","password":"Suminan02@","c_password":"Suminan02@","email":"testphed@g.cv","name":"asdf","surname":"dfhtt","cid":"9999999995123","phonenumber":"100000000","address":"testeeeeeeeeeeeee","date":"1737366878","user":"9a4a316d2de89a50a49316c2705d51dd"}
+-------------------------
+2025-01-20 16:54:41
+IP :180.183.250.244
+DATA : 3
+-------------------------
+2025-01-20 16:54:41
+IP :180.183.250.244
+DATA : 1737366878
+-------------------------
+2025-01-20 16:54:41
+IP :180.183.250.244
+DATA : 1737366881
+-------------------------
+2025-01-20 16:54:41
+IP :180.183.250.244
+DATA : {"ret":"101","msg":"success","data":{"username":"TestPeePhet","password":"Suminan02@","c_password":"Suminan02@","email":"testphed@g.cv","name":"asdf","surname":"dfhtt","cid":"9999999995123","phonenumber":"100000000","address":"testeeeeeeeeeeeee","date":"1737366878","user":"9a4a316d2de89a50a49316c2705d51dd"},"location":"https:\/\/together-gladly-airedale.ngrok-free.app\/ss5\/day5\/table_show.php"}
+-------------------------
+2025-01-20 16:54:41
+IP :180.183.250.244
+DATA : {"username":"TestPeePhet","password":"Suminan02@","c_password":"Suminan02@","email":"testphed@g.cv","name":"asdf","surname":"dfhtt","cid":"9999999995123","phonenumber":"100000000","address":"testeeeeeeeeeeeee","date":"1737366881","user":"72e97e2b924e3e2592398667bf651705"}
+-------------------------
+2025-01-20 16:54:41
+IP :180.183.250.244
+DATA : 0
+-------------------------
+2025-01-20 16:54:41
+IP :180.183.250.244
+DATA : 1737366881
+-------------------------
+2025-01-20 16:54:41
+IP :180.183.250.244
+DATA : 1737366881
+-------------------------
+2025-01-20 16:54:41
+IP :180.183.250.244
+DATA : {"ret":"301","msg":"Unsuccess  dupli","sql":"INSERT INTO user_info\r\n(`username`, `password`, `citizin_id`, `email`, `name`, `surname`, `address`, `phone_number`) \r\nVALUES ('TestPeePhet', '519eec329adfc8efb1d43dda677e08b4', '9999999995123', 'testphed@g.cv', 'asdf', 'dfhtt',' testeeeeeeeeeeeee', '100000000');\r\n"}
+-------------------------
+2025-01-20 16:54:42
+IP :180.183.250.244
+DATA : {"username":"TestPeePhet","password":"Suminan02@","c_password":"Suminan02@","email":"testphed@g.cv","name":"asdf","surname":"dfhtt","cid":"9999999995123","phonenumber":"100000000","address":"testeeeeeeeeeeeee","date":"1737366881","user":"72e97e2b924e3e2592398667bf651705"}
+-------------------------
+2025-01-20 16:54:42
+IP :180.183.250.244
+DATA : 1
+-------------------------
+2025-01-20 16:54:42
+IP :180.183.250.244
+DATA : 1737366881
+-------------------------
+2025-01-20 16:54:42
+IP :180.183.250.244
+DATA : 1737366882
+-------------------------
+2025-01-20 16:54:42
+IP :180.183.250.244
+DATA : {"ret":"301","msg":"Unsuccess  dupli","sql":"INSERT INTO user_info\r\n(`username`, `password`, `citizin_id`, `email`, `name`, `surname`, `address`, `phone_number`) \r\nVALUES ('TestPeePhet', '519eec329adfc8efb1d43dda677e08b4', '9999999995123', 'testphed@g.cv', 'asdf', 'dfhtt',' testeeeeeeeeeeeee', '100000000');\r\n"}
+-------------------------
+2025-01-20 16:55:00
+IP :180.183.250.244
+DATA : {"username":"userame11211","password":"Password01!","c_password":"Password01!","name":"hj","surname":"jh","email":"hun@ghg.com","cid":"0001111112454","phonenumber":"","address":"","date":"1737366900","user":"a5bc5c833406f05e63a9d37963f8a2af"}
+-------------------------
+2025-01-20 16:55:00
+IP :180.183.250.244
+DATA : 0
+-------------------------
+2025-01-20 16:55:00
+IP :180.183.250.244
+DATA : 1737366900
+-------------------------
+2025-01-20 16:55:00
+IP :180.183.250.244
+DATA : 1737366900
+-------------------------
+2025-01-20 16:55:00
+IP :180.183.250.244
+DATA : {"ret":"101","msg":"success","data":{"username":"userame11211","password":"Password01!","c_password":"Password01!","name":"hj","surname":"jh","email":"hun@ghg.com","cid":"0001111112454","phonenumber":"","address":"","date":"1737366900","user":"a5bc5c833406f05e63a9d37963f8a2af"},"location":"https:\/\/together-gladly-airedale.ngrok-free.app\/ss5\/day5\/table_show.php"}
+-------------------------
+2025-01-20 16:55:06
+IP :180.183.250.244
+DATA : {"username":"TestPeePhet","password":"Suminan02@","c_password":"Suminan02@","email":"testphed@g.cv","name":"asdf","surname":"dfhtt","cid":"9999999995123","phonenumber":"100000000","address":"testeeeeeeeeeeeee","date":"1737366905","user":"d47d636d3159146ecf32ea1a0326b7e2"}
+-------------------------
+2025-01-20 16:55:06
+IP :180.183.250.244
+DATA : 1
+-------------------------
+2025-01-20 16:55:06
+IP :180.183.250.244
+DATA : 1737366905
+-------------------------
+2025-01-20 16:55:06
+IP :180.183.250.244
+DATA : 1737366906
+-------------------------
+2025-01-20 16:55:06
+IP :180.183.250.244
+DATA : {"ret":"301","msg":"Unsuccess  dupli","sql":"INSERT INTO user_info\r\n(`username`, `password`, `citizin_id`, `email`, `name`, `surname`, `address`, `phone_number`) \r\nVALUES ('TestPeePhet', '519eec329adfc8efb1d43dda677e08b4', '9999999995123', 'testphed@g.cv', 'asdf', 'dfhtt',' testeeeeeeeeeeeee', '100000000');\r\n"}
+-------------------------
+2025-01-20 16:57:41
+IP :180.183.250.244
+DATA : {"username":"TestPee","password":"Suminan02@","c_password":"Suminan02@","email":"testphet@g.cv","name":"asdf","surname":"dfhtt","cid":"9999999852145","phonenumber":"100000000","address":"testeeeeeeeeeeeee","date":"1737367060","user":"7a7ad600dea42cfda0e5edcbbe34342d"}
+-------------------------
+2025-01-20 16:57:41
+IP :180.183.250.244
+DATA : 1
+-------------------------
+2025-01-20 16:57:41
+IP :180.183.250.244
+DATA : 1737367060
+-------------------------
+2025-01-20 16:57:41
+IP :180.183.250.244
+DATA : 1737367061
+-------------------------
+2025-01-20 16:57:41
+IP :180.183.250.244
+DATA : {"ret":"301","msg":"Invalid pattern username"}
+-------------------------
+2025-01-20 16:57:49
+IP :180.183.250.244
+DATA : {"username":"TestPee02","password":"Suminan02@","c_password":"Suminan02@","email":"testphet@g.cv","name":"asdf","surname":"dfhtt","cid":"9999999852145","phonenumber":"100000000","address":"testeeeeeeeeeeeee","date":"1737367066","user":"7348bf9594c987b1901db3ce681143ef"}
+-------------------------
+2025-01-20 16:57:49
+IP :180.183.250.244
+DATA : 3
+-------------------------
+2025-01-20 16:57:49
+IP :180.183.250.244
+DATA : 1737367066
+-------------------------
+2025-01-20 16:57:49
+IP :180.183.250.244
+DATA : 1737367069
+-------------------------
+2025-01-20 16:57:49
+IP :180.183.250.244
+DATA : {"ret":"101","msg":"success","data":{"username":"TestPee02","password":"Suminan02@","c_password":"Suminan02@","email":"testphet@g.cv","name":"asdf","surname":"dfhtt","cid":"9999999852145","phonenumber":"100000000","address":"testeeeeeeeeeeeee","date":"1737367066","user":"7348bf9594c987b1901db3ce681143ef"},"location":"https:\/\/together-gladly-airedale.ngrok-free.app\/ss5\/day5\/table_show.php"}
+-------------------------

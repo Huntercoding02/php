@@ -348,7 +348,7 @@ function write_log($log){
     "IP :".get_client_ip().PHP_EOL.
     "DATA : ".$log.PHP_EOL."-------------------------".PHP_EOL;
     //Save string to log, use FILE_APPEND to append.
-    file_put_contents('logs/log_x'.date("Ymd").'.txt', $date_log, FILE_APPEND);
+    file_put_contents('logs/log_'.date("Ymd").'.txt', $date_log, FILE_APPEND);
 }
 
 function get_client_ip() {

@@ -377,7 +377,7 @@ function cuel($url, $setup)
 function write_log($log){
     //Something to write to txt log
     $date_log = date("Y-m-d H:i:s").PHP_EOL.
-    "IP :".get_client_ip().PHP_EOL;
+    "IP :".get_client_ip().PHP_EOL.
     "DATA : ".$log.PHP_EOL."-------------------------".PHP_EOL;
     //Save string to log, use FILE_APPEND to append.
     file_put_contents('day3/logs/log_'.date("Ymd").'.txt', $date_log, FILE_APPEND);
