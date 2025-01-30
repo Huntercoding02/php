@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <style>
-    .o{
+    .o {
         color: red;
     }
 </style>
+
 <body>
     <h3>วาดรูปสี่เหลี่ยม XO</h3>
     <form method="GET">
@@ -61,19 +62,30 @@ if(isset($number_data)){
 function cal($number_data)
 {
 
-    for ($i = 1; $i <= $number_data ; $i++) {
-        for ($j = 1; $j <= $i; $j++) {
-            if($i%5==0 || $j%5==0){
-                echo '<span class="o">O</span>';
+    for ($i = $number_data; $i >= 0 ; $i--) {
 
+        for ($j = 1; $j <= $i; $j++) {
+            if($i%5==0 ||$j%5==0){
+                echo '<span class="o">O</span>';
             }else{
                 echo '<span class="x">X</span>';
             }
         }
         echo '<br>';
-       
-    }
-}
 
+    }
+    // for ($i = 0; $i < $number_data - 1; $i++) {
+    //     for ($j = 0; $j < $number_data - 1 - $i; $j++) {
+    //         if ($i % 5 == 0) {
+    //             echo '<span class="o">O</span>';
+    //         } else if ($j % 5 == 0) {
+    //             echo '<span class="o">O</span>';
+    //         } else {
+    //             echo '<span class="x">X</span>';
+    //         }
+    //     }
+    //     echo '<br>';
+    // }
+}
 
 ?>

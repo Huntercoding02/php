@@ -28,17 +28,22 @@
 if (isset($_GET['submit']) && $_GET['submit'] != '') {
     if (isset($_GET['number']) && $_GET['number'] != '') {
         $number_data = $_GET['number'];
+        if ($number_data < '5' || $number_data > '50') {
+            echo 'ใส่ขั้นต่ำ 5 น้อยกว่า 50';
+            exit;
+        }
     } else {
         echo "Invalid Input2";
         exit;
     }
 }
-if ($number_data < '5' || $number_data > '50') {
-    echo 'ใส่ขั้นต่ำ 5 น้อยกว่า 50';
-    exit;
+if(isset($number_data)){
+    cal($number_data);
+}else{
+    return false;
 }
 
-cal($number_data);
+
 
 // if(isset($_GET['submit']) && $_GET['submit'] !=''){
 //     if(isset($_GET['number_data']) && $_GET['number_data'] !=''){
