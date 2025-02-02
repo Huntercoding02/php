@@ -34,7 +34,10 @@
 
 
 echo "<table border='1'><br />";
-for($i=2; $i<=13; $i++)
+function start($start,$stop){
+
+
+for($i=$start; $i<=$stop; $i++)
 {
 echo '<th>'.'แม่ '.$i.'</th>';
 }
@@ -42,7 +45,7 @@ for($i=1; $i<=12; $i++)
 {
 
     echo '<tr>';
-    for ($j=1; $j<=12; $j++)
+    for ($j=$start-1; $j<=$stop-1; $j++)
     {
         
         echo "<td>".$j+1;
@@ -52,13 +55,11 @@ for($i=1; $i<=12; $i++)
 }
 echo "</table>";
 
+}
+echo start(2,13);
 
-
-?>
-<?php
 echo "<table border='1'><br />";
-for($i=14; $i<=25; $i++)
-{
+for($i=14; $i<=25; $i++){
 echo '<th>'.'แม่ '.$i.'</th>';
 }
 for($i=1; $i<=12; $i++)
@@ -66,12 +67,21 @@ for($i=1; $i<=12; $i++)
     echo '<tr>';
     for ($j=14; $j<=25; $j++)
     {
-        echo "<td>".$j;
-        echo " x ". $i  . " = ".($j)*$i."</td>";
+        echo "<td>".$j." x ". $i  . " = ".$j*$i."</td>";
     }
     echo '</tr>';
 }
 echo "</table>";
 
-echo "</table>";
+echo '<table><br />';
+for($i=2;$i<=12;$i++){
+    echo '<th>'.'แม่'.$i.'</th>';
+}
+for($i=1;$i<=12;$i++){
+    echo '<tr>';
+    for($j=2;$j<=12;$j++){
+        echo '<td>'.$j.' x '.$i.' = '.$i * $j.'</td>'; 
+    }  
+}
+echo '</table>';
 ?>
