@@ -81,7 +81,7 @@ function multi($number_data,$div,$mod){
     
     for($i=1;$i<=$number_data;$i++){
         if($i %$div == 0){
-            $evenres *=$i;
+         $evenres =$evenres * $i;
         array_push($arr,$i);
         array_push($m,$i);
         }
@@ -96,30 +96,25 @@ echo mapstring($val,$arr_res);
 function mapstring($symbol,$list){
     $res_string ="";
     $res_num =1;
-    $res=1;
+    $res_mod = 1;
 if(is_array($list)){
     for($i=0;$i<count($list);$i++){
-       
         if($i == count($list)-1){
             $res_string .=$list[$i];
 
         }else{
             $res_string .=$list[$i].$symbol;
         }
-        echo  'ผล '.$res_num = ($res_num%1000000) *$list[$i];
-        echo '<br>';
-        echo  'ตัว '.$list[$i];
-        echo '<br>';
-        // echo $list[$i].'<br>';
-        // echo $lista = $list[$i]*$list[$i+1].'<br>';
-        // echo $listb = $list[$i+$i+1]*$lista.'<br>';
+        $res_num *=$list[$i];
+        $res_mod = $res_num % 1000000;
+    
     }
   
 }
    echo $res_string;
    echo ' = '.number_format($res_num);
    echo '<br>';
-   echo 'Products (mod 10^6) : ';
+   echo 'Products (mod 10^6) : '.number_format($res_mod);
 
 }
 
