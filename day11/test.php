@@ -9,7 +9,7 @@ function test($n){
         if($i == $n){
             $val = ' = '; 
         }
-    //echo $i.$val;
+    echo $i.$val;
         $res += $i;
     }
     $end =time();
@@ -17,6 +17,7 @@ function test($n){
        'res'=>$res
     ];
     echo $arr['0']['res']."hi";
+    
     print_r($arr);
     echo $end.'time';
     echo $start."start";

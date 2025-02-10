@@ -31,7 +31,7 @@ if (isset($_GET['submit']) && $_GET['submit'] != '') {
         $number_data = $_GET['number'];
        
     } else {
-        echo "Invalid Input2";
+        echo "Invalid Input";
         exit;
     }
 }
@@ -41,34 +41,61 @@ if(isset($number_data)){
     return false;
 }
 
+// function cal($number_data)
+// {
+//     $x =1;
+
+//     for ($i = 1; $i < $number_data+1; $i++) {
+        
+//         for($j=$number_data-$i;$j>0;$j--){ 
+//                 echo " &nbsp ";  
+//         }
+//         // $row = [];
+//         for ($j = 0; $j < $i; $j++) {
+//             // $row = $x;
+           
+//             if($i%2==0){
+//                 // echo strrev($x)." ";
+//             //   echo $row = array_reverse($row);
+//             // array_push($row,$x);
+//             // print_r(array_reverse($row));
+//                 echo $x." ";
+//             }else{
+//                 echo $x." ";
+//             }
+//             $x++;
+//         }
+//         echo '<br>';
+     
+//     }
+// }
+
 function cal($number_data)
 {
-    $x =1;
+    $x = 1;
 
-    for ($i = 1; $i < $number_data+1; $i++) {
-        
-        for($j=$number_data-$i;$j>0;$j--){ 
-                echo " &nbsp ";  
+    for ($i = 1; $i <= $number_data; $i++) {
+        for ($j = $number_data - $i; $j > 0; $j--) {
+            echo " &nbsp ";
         }
-        $row = [];
-        for ($j = 0; $j < $i; $j++) {
-            // $row = $x;
+
+        if ($i % 2 == 0) {
+            
+            $start = $x + $i - 1;
            
-            if($i%2==0){
-                // echo strrev($x)." ";
-            //   echo $row = array_reverse($row);
-            // array_push($row,$x);
-            // print_r(array_reverse($row));
-                echo $x." ";
-            }else{
-                echo $x." ";
+            for ($j = 0; $j < $i; $j++) {
+                echo $start-- . " ";
+                $x++;
             }
-            $x++;
+        } else {
+           
+            for ($j = 0; $j < $i; $j++) {
+                echo $x . " ";
+                $x++;
+            }
         }
+        
         echo '<br>';
-     
     }
 }
-
-
 ?>

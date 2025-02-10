@@ -28,7 +28,7 @@
 
 $start = '2';
 $div = '12';
-$total = '100';
+$total = '25';
 echo cal_x($start,$div,$total);
 function cal_x($start,$div,$total){
     $split_rows = (int)($total/$div);
@@ -75,21 +75,21 @@ function cal_x($start,$div,$total){
 // //echo cal(2,13);
 
 
-// //echo "<table border='1'><br />";
-// function cal2($start,$stop){
-//     for($i=$start; $i<=$stop; $i++){
-//     echo '<th>'.'แม่ '.$i.'</th>';
-//     }
-//     echo '<tr>';
-//     for($i=1; $i<=12; $i++){
+echo "<table border='1'><br />";
+function cal2($start,$stop){
+    for($i=$start; $i<=$stop; $i++){
+    echo '<th>'.'แม่ '.$i.'</th>';
+    }
+    echo '<tr>';
+    for($i=1; $i<=12; $i++){
         
-//         for ($j=$start; $j<=$stop; $j++){
-//             echo "<td>".$j." x ". $i  . " = ".$j*$i."</td>";
-//         }
-//         echo '</tr>';
-//     }
-// }
-//echo cal2(14,25);
-//echo "</table>";
+        for ($j=$start; $j<=$stop; $j++){
+            echo "<td>".$j." x ". $i  . " = ".$j*$i."</td>";
+        }
+        echo '</tr>';
+    }
+}
+echo cal2(14,25);
+echo "</table>";
 
 ?>

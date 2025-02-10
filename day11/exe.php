@@ -43,23 +43,6 @@ if(isset($number_data)){
     return false;
 }
 
-
-
-// if(isset($_GET['submit']) && $_GET['submit'] !=''){
-//     if(isset($_GET['number_data']) && $_GET['number_data'] !=''){
-//         $number_data = $_GET['number_data'];
-//     }else{
-//         echo "Invalid Input2";
-//         exit;
-//     }
-//     echo cal($number_data);
-// }else{
-//     echo "Invalid Input";
-//     exit;
-// }
-
-
-
 function cal($number_data)
 {
 
