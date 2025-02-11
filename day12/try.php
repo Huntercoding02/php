@@ -30,9 +30,9 @@
     </style>
 </head>
 <body>
-    <div style="display:flex;">
+    
     <button id="myBtn" >Click here for rank preview</button>
-    </div>
+
     
     
     <div id="rank" style="display: none;">

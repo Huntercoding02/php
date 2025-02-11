@@ -37,7 +37,7 @@
     <div class="button-container ">
     <button id="BTM" style="margin:0px auto;">Click to see table</button>
     </div>
-    
+    <button id="back" style="margin:0px auto;">Back to again page</button>
     <div id="table" style="display: none;">
         <h1 style="text-align: center;">Show info</h1>
         <table >
@@ -265,6 +265,9 @@
 </html>
 <script>
     $(document).ready(function(){
+        $('#back').click(function(){
+            window.location.href = 'again.php'
+        })
         $('#BTM').click(function(){
             x = document.getElementById('BTM')
             if(x.innerHTML == "Click to see table"){

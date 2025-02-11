@@ -7,15 +7,18 @@
     <title>try</title>
 </head>
 <body>
-    <button id="must" a href="you.php">click to go</button>
-    <a href="you.php">you</a>
+    <button id="must" a href="you.php">1.click to you page ajax</button>
+    <button onclick='window.location.href = "you.php"'>
+  2.Click onclick
+</button>
+    <a href="you.php">3.you href</a>
 </body>
 </html>
 <script>
 
-    // $(document).ready(function(){
-    //     $('#must').click(function(){
-    //        window.location.href="you.php"
-    //     })
-    // })
+    
+        $('#must').click(function(){
+           window.location.href="you.php"
+        })
+   
 </script>
