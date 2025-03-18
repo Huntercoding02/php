@@ -16,7 +16,7 @@
 
 
 <?PHP
-
+$number =0;
 if(isset($_GET['btn']) && ($_GET['btn']!='')){
      if(isset($_GET['num']) && $_GET['num'] != ''){
         $number  = $_GET['num'];
@@ -28,7 +28,7 @@ if(isset($_GET['btn']) && ($_GET['btn']!='')){
 }
 
 // จำนวนวินาทีที่ต้องการแปลง
-$seconds = 1000;
+$seconds = $number ;
 
 // คำนวณจำนวนชั่วโมง
 $hours = floor($seconds / 3600);

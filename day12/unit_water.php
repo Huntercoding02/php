@@ -51,4 +51,7 @@ echo 'ค่าน้ำ : '.$first + $sec + $third + $fourth+ '50';
 
 }
 // echo water(39);
+
+
+
 ?>
