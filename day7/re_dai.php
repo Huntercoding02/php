@@ -117,7 +117,7 @@
         <label for="hunter">Hunter</label><br>
         <input type="radio" id="daimond" name="sql" value="1">
         <label for="daimond">Daimond</label><br>
-        <input type="radio" id="ford" name="sql" value="0">
+        <input type="radio" id="ford" name="sql" value="0">
         <label for="ford">Ford</label><br>
     </div>
     

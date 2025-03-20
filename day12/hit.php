@@ -55,24 +55,22 @@
         </tr>
     </thead>
     <tbody>
-    <!-- "stategifted" => "love",
-        "order" => 1,
-        "money" => 100,
-        "gift_num" => 1,
-        "gift_gold_total" => 1000.00,
-        "ctime" => "2025-02-07 10:21:45",
-        "gift_id" => 101,
-        "gift_name" => "Rose",
-        "user_idx_receive" => "user001",
-        "user_uid_receive" => "uid001",
-        "user_idx" => "user002",
-        "user_uid" => "uid002",
-        "receive_type" => 1,
-        "item_order_no" => "ORD1001",
-        "scene" => 2 -->
+  
         <?php
 
     require_once('data.php');
+
+    $limit = 10; // จำนวนข้อมูลต่อหน้า
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1; // รับค่าหน้าปัจจุบันจาก URL
+$offset = ($page - 1) * $limit; // คำนวณ OFFSET
+
+// นับจำนวนข้อมูลทั้งหมด
+$total_records = count($array_info);
+$total_pages = ceil($total_records / $limit);
+
+// ตัดข้อมูลให้เหลือเฉพาะหน้าที่เลือก
+$array_info = array_slice($array_info, $offset, $limit);
+
       $count = 1;
     //   print_r($users);
         foreach ($array_info as $item) : 
@@ -94,6 +92,18 @@
             </tr>
             <?php endforeach; ?>
     </tbody>
+    <?php if ($total_pages > 1) : ?>
+    <div style="text-align: center; margin-top: 20px;">
+        <?php for ($i = 1; $i <= $total_pages; $i++) : ?>
+            <a href="?page=<?= $i ?>" 
+               style="margin: 5px; padding: 8px 12px; 
+                      text-decoration: none; 
+                      <?= ($i == $page) ? 'background-color: #F00; color: white; font-weight: bold;' : 'background-color: #CCC; color: black;' ?>">
+                <?= $i ?>
+            </a>
+        <?php endfor; ?>
+    </div>
+<?php endif; ?>
 </table>
 </div>
     <script>
@@ -119,5 +129,6 @@
         // // echo count($x);
         // echo '</table>';
         ?>
+
 </body>
 </html>

@@ -8,17 +8,17 @@
 </head>
 <body>
     <button id="must" a href="you.php">1.click to you page ajax</button>
-    <button onclick='window.location.href = "you.php"'>
+    <button onclick='window.location.href = "show-table.php"'>
   2.Click onclick
 </button>
-    <a href="you.php">3.you href</a>
+    <a href="show-table.php">3.you href</a>
 </body>
 </html>
 <script>
 
     
         $('#must').click(function(){
-           window.location.href="you.php"
+           window.location.href="show-table.php"
         })
    
 </script>
