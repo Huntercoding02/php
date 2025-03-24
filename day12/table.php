@@ -7,11 +7,12 @@
     <title>try</title>
 </head>
 <body>
-    <button id="must" a href="you.php">1.click to you page ajax</button>
+    <h1>METHODS</h1>
+    <button id="must" a href="you.php">1.Click to table page method ajax</button><br><br>
     <button onclick='window.location.href = "show-table.php"'>
-  2.Click onclick
-</button>
-    <a href="show-table.php">3.you href</a>
+  2.Click method onclick
+</button><br><br>
+    <a href="show-table.php">3.link href</a>
 </body>
 </html>
 <script>
